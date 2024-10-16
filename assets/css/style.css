@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "cabin";
+}
+button {
+  cursor: pointer;
+}
+nav {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+nav div {
+  display: flex;
+  height: 100%;
+  width: 40%;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 50px;
+}
+.nav-items {
+  display: flex;
+  list-style-type: none;
+  width: 300px;
+  justify-content: space-evenly;
+}
+.nav-item a {
+  text-decoration: none;
+  color: #222;
+}
+.home-nav-item a {
+  color: #de4132;
+}
+nav button {
+  background-color: #de4132;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 30px;
+  margin-right: 50px;
+}
+.hero {
+  background-image: url(../imgs/header-bg.png);
+  padding: 0 50px;
+  height: 600px;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.hero h1 {
+  color: #313b4c;
+  width: 500px;
+  font-size: 3.7em;
+  margin-top: 50px;
+}
+.hero h1 span {
+  color: #de4132;
+}
+.hero p {
+  width: 500px;
+  color: #222;
+}
+.hero div {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+}
+.hero button {
+  background-color: #de4132;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 30px;
+  width: max-content;
+}
+#select-package-btn {
+  background-color: white;
+  color: #de4132;
+}
+.partners {
+  height: 250px;
+  background-color: #fef9f9;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.partners h2 {
+  font-size: 38px;
+  color: #222;
+}
+.partners h2 span {
+  color: #de4132;
+}
+.partners div {
+  display: flex;
+  justify-content: space-evenly;
+}
+.ski-snowboard-guides {
+  margin-top: 100px;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.ski-snowboard-guides h2 {
+  color: #222;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+.ski-snowboard-guides h2 span {
+  color: #de4132;
+}
+.ski-card {
+  width: 390px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 450px;
+}
+.ski-card img {
+  width: 100%;
+}
+.ski-card p {
+  color: rgba(49, 59, 76, 0.8);
+}
+.ski-card h3 {
+  color: #222;
+  font-size: 22px;
+}
+.ski-card a {
+  color: #de4132;
+  text-decoration: none;
+}
+.ski-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.best-platform {
+  background-image: url(../imgs/banner.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+.best-platform h3,
+.best-platform p {
+  color: white;
+}
+.best-platform h3 {
+  font-size: 30px;
+}
+.best-platform button {
+  background-color: white;
+  color: #de4132;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 30px;
+  width: max-content;
+}
+.newsfeed {
+  margin: 0 50px;
+}
+.newsfeed h3 {
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+.newsfeed span {
+  color: #de4132;
+}
+.newsfeed-cards {
+  display: flex;
+  justify-content: space-between  ;
+}
+.newsfeed-card {
+  width: 390px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.newsfeed-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+small {
+  color: rgba(49, 59, 76, 0.8);
+}
+.newsfeed-card h4 {
+  font-size: 26px;
+}
+.newsfeed-card p {
+  color: rgba(49, 59, 76, 0.8);
+  text-align: justify;
+}
+.list-newsfeed-cards {
+  width: 390px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.list-newsfeed-card {
+  display: flex;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: rgb(205, 205, 205);
+}
+.list-newsfeed-card img {
+  border-radius: 10px;
+  width: 100px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+.list-newsfeed-card p {
+  color: #222;
+  font-weight: 700;
+  font-size: 18px;
+}
+.list-newsfeed-card div {
+  display: flex;
+  flex-direction: column;
+}
+.last-list-newsfeed-card img {
+  margin-bottom: 0;
+}
+.last-list-newsfeed-card {
+  border-bottom-style: none;
+}
+.newsfeed {
+  margin-bottom: 100px;
+}
+.contact {
+  height: 250px;
+  background-color: #fef9f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+.contact small {
+  color: #fdac1d;
+}
+.contact span {
+  color: #de4132;
+}
+.contact h1 {
+  font-size: 2.5em;
+  color: #313b4c;
+  width: 400px;
+  line-height: 40px;
+  margin-top: 5px;
+}
+.contact p {
+  color: rgba(49, 59, 76, 0.8);
+  text-align: justify;
+  width: 500px;
+}
+.about {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: space-between;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.contact form input {
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: #f2f3f4;
+  outline-color: #de4132;
+  padding-left: 10px;
+}
+.contact form button {
+  background-color: #de4132;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 30px;
+}
+footer{
+  margin: 20px 0;
+  text-align: center;
+}
+footer p {
+  color: rgba(49, 59, 76, 0.8);
+}
