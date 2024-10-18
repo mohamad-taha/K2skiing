@@ -8,6 +8,7 @@ body {
 button {
   cursor: pointer;
 }
+/* nav-section */
 nav {
   margin-top: 10px;
   display: flex;
@@ -15,7 +16,8 @@ nav {
   height: 50px;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  position: absolute;
+  z-index: 1;
 }
 nav div {
   display: flex;
@@ -46,10 +48,36 @@ nav button {
   padding: 10px 30px;
   margin-right: 50px;
 }
+nav .list-btn {
+  background-color: transparent;
+  display: none;
+}
+@media (max-width: 834px) {
+  nav {
+    padding: 0;
+    position: static;
+    z-index: 0;
+  }
+  .nav-items,
+  nav button {
+    display: none;
+    margin: 0;
+  }
+  nav .list-btn {
+    display: block;
+    padding: 0;
+    padding-right: 20px;
+  }
+  nav div {
+    margin: 0;
+    width: fit-content;
+    padding-left: 20px;
+  }
+}
+/* hero-section */
 .hero {
   background-image: url(../imgs/header-bg.png);
-  padding: 0 50px;
-  height: 600px;
+  padding: 100px 50px;
   background-position: center;
   display: flex;
   flex-direction: column;
@@ -86,6 +114,29 @@ nav button {
   background-color: white;
   color: #de4132;
 }
+@media (max-width: 360px) {
+  .hero {
+    padding: 50px 20px;
+    background-size: cover;
+  }
+  .hero h1 {
+    margin: 0;
+    width: 300px;
+    font-size: 3em;
+    color: white;
+  }
+  .hero p {
+    width: 300px;
+  }
+  .hero button {
+    width: 160px;
+  }
+  .hero div {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+/* partners-section */
 .partners {
   height: 250px;
   background-color: #fef9f9;
@@ -104,7 +155,23 @@ nav button {
 .partners div {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
+@media (max-width: 834px) {
+  .partners {
+    height: max-content;
+    padding: 20px 0;
+  }
+  .partners div {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .partners img {
+    width: 200px;
+  }
+}
+/* ski-section */
 .ski-snowboard-guides {
   margin-top: 100px;
   text-align: center;
@@ -145,6 +212,27 @@ nav button {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 360px) {
+  .ski-snowboard-guides {
+    margin: 0;
+  }
+  .ski-cards {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  .ski-card {
+    width: 300px;
+  }
+}
+@media (min-width: 361px) and (max-width: 834px) {
+  .ski-card {
+    width: 220px;
+    text-align: left;
+  }
+}
+
+/* best-platform-section */
 .best-platform {
   background-image: url(../imgs/banner.png);
   display: flex;
@@ -173,8 +261,16 @@ nav button {
   padding: 10px 30px;
   width: max-content;
 }
+@media (max-width: 360px) {
+  .best-platform {
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+/* newsfeed-section */
 .newsfeed {
   margin: 0 50px;
+  margin-bottom: 100px;
 }
 .newsfeed h3 {
   font-size: 35px;
@@ -185,7 +281,7 @@ nav button {
 }
 .newsfeed-cards {
   display: flex;
-  justify-content: space-between  ;
+  justify-content: space-between;
 }
 .newsfeed-card {
   width: 390px;
@@ -242,9 +338,49 @@ small {
 .last-list-newsfeed-card {
   border-bottom-style: none;
 }
-.newsfeed {
-  margin-bottom: 100px;
+@media (max-width: 360px) {
+  .newsfeed {
+    padding: 0 20px;
+    margin: 0;
+    margin-bottom: 100px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .newsfeed-cards,
+  .list-newsfeed-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .newsfeed-card,
+  .list-newsfeed-card {
+    width: 300px;
+  }
 }
+@media (min-width: 361px) and (max-width: 834px) {
+  .newsfeed {
+    padding: 0 20px;
+    margin: 0;
+    margin-bottom: 100px;
+  }
+  .list-newsfeed-cards {
+    width: fit-content;
+  }
+  .newsfeed-card,
+  .list-newsfeed-card {
+    width: 250px;
+    text-align: left;
+    justify-content: flex-start;
+  }
+  .newsfeed-card {
+    gap: 30px;
+  }
+  .newsfeed-card p {
+    text-align: left;
+  }
+}
+/* contact-section */
 .contact {
   height: 250px;
   background-color: #fef9f9;
@@ -301,7 +437,41 @@ small {
   border: none;
   padding: 10px 30px;
 }
-footer{
+@media (max-width: 360px) {
+  .contact {
+    flex-direction: column;
+    padding: 20px 20px;
+    gap: 30px;
+    height: min-content;
+  }
+  .about {
+    width: 100%;
+    height: max-content;
+    gap: 30px;
+  }
+  .contact p,
+  .contact h1 {
+    width: 300px;
+  }
+}
+@media (min-width: 361px) and (max-width: 834px) {
+  .contact {
+    padding: 20px 20px;
+    gap: 30px;
+    height: max-content;
+  }
+  .about {
+    width: 100%;
+    height: max-content;
+    gap: 30px;
+  }
+  .contact p,
+  .contact h1 {
+    width: 350px;
+  }
+}
+/* footer-section */
+footer {
   margin: 20px 0;
   text-align: center;
 }
