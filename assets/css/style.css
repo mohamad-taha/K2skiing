@@ -215,6 +215,8 @@ nav .list-btn {
 @media (max-width: 430px) {
   .ski-snowboard-guides {
     margin: 0;
+    padding: 0 20px;
+    margin-top: 100px;
   }
   .ski-cards {
     flex-direction: column;
@@ -282,6 +284,7 @@ nav .list-btn {
 .newsfeed-cards {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .newsfeed-card {
   width: 390px;
@@ -306,7 +309,6 @@ small {
 }
 .list-newsfeed-cards {
   width: 390px;
-  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -364,17 +366,27 @@ small {
     margin: 0;
     margin-bottom: 100px;
   }
-  .list-newsfeed-cards {
-    width: fit-content;
-  }
-  .newsfeed-card,
-  .list-newsfeed-card {
-    width: 250px;
-    text-align: left;
-    justify-content: flex-start;
+  .newsfeed-cards{
+    gap: 20px;
   }
   .newsfeed-card {
     gap: 30px;
+    width: 350px;
+    
+  }
+  .list-newsfeed-cards{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .list-newsfeed-card{
+    width: 350px;
+    border: none;
+  }
+  .list-newsfeed-card img{
+    height: 69px;
+    object-fit: cover;
   }
   .newsfeed-card p {
     text-align: left;
